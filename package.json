@@ -1,0 +1,24 @@
+{
+  "name": "modmail",
+  "version": "1.0.0",
+  "description": "Discord-modMail est un system de contacte crée avec NodeJs, MySQL et discord.js. Il permet au membre de votre serveur de rentré en concatcte avec votre staff avec un simple mp au bot !",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssoraa/modMail.git"
+  },
+  "keywords": [
+    "modmail",
+    "djs",
+    "js"
+  ],
+  "author": "Sora",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ssoraa/modMail/issues"
+  },
+  "homepage": "https://github.com/ssoraa/modMail#readme"
+}
