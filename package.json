@@ -4,7 +4,8 @@
   "description": "Discord-modMail est un system de contacte crée avec NodeJs, MySQL et discord.js. Il permet au membre de votre serveur de rentré en concatcte avec votre staff avec un simple mp au bot !",
   "main": "main.js",
   "scripts": {
-    "test": "nodemon main"
+    "test": "nodemon main",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
