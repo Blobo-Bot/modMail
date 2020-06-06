@@ -1,6 +1,6 @@
 ## **DISCORD MODMAIL**
 
-[![N|Solid](https://lh3.googleusercontent.com/proxy/uNdE2wIHE_z17lt6hfQPyi8RVFrFq4d3eApD58yRx35NEXP4p_-HZzH7DzbrU1kI5VJbBXu882zv_YqJWT3ir_1fw3Ylum62wD6tmgISHVqfn65galOz-yQeyAj_7H6K0w)]
+[N|Solid](https://lh3.googleusercontent.com/proxy/uNdE2wIHE_z17lt6hfQPyi8RVFrFq4d3eApD58yRx35NEXP4p_-HZzH7DzbrU1kI5VJbBXu882zv_YqJWT3ir_1fw3Ylum62wD6tmgISHVqfn65galOz-yQeyAj_7H6K0w)
 
 # Que ce que discord-modMail
 Discord-modMail est un system de contacte crée avec **NodeJs**, **MySQL** et **discord.js**. Il permet au membre de votre serveur de rentré en concatcte avec votre staff avec un simple mp au bot !
@@ -23,7 +23,7 @@ Discord-modMail est un system de contacte crée avec **NodeJs**, **MySQL** et **
 
 [NODEJS]() est indispensable pour utiliser discord-modMail !
 [XAMPP]() est indispensable pour utiliser discord-modMail ! Uns fois installer ouvrez le puis lancer **MySQL** et **Apache**. Une fois cela fait ouvrez votre navigateur et redez vous sur : **[localhost/phpmyadmin](http://localhost/phpmyadmin)** et crée une nouvelle base de données nomé **modMail**
-[![N|Solid](https://gyazo.com/8fbbcc91085538e73b52fbfee114bec4.gif)]
+![N|Solid](https://gyazo.com/8fbbcc91085538e73b52fbfee114bec4.gif)
 
 
 ### LINUX
