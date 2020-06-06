@@ -1,6 +1,6 @@
 const credentials = {
   base: {
-      token: 'NzE4NzY5OTc2MzExNDE0ODM3.Xttzhw.pAcNZzVVP7iYmFGtf7UwyC9FRsA'
+      token: 'priv'
   },
   database: {
       host: '',

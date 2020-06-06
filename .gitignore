@@ -1,3 +1,5 @@
 node_modules
 settings/config.js
 settings/credentials.js
+settings/config
+settings/credentials
