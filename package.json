@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/ssoraa/modMail/issues"
   },
-  "homepage": "https://github.com/ssoraa/modMail#readme"
+  "homepage": "https://github.com/ssoraa/modMail#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "discord.js": "^12.2.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
 }
