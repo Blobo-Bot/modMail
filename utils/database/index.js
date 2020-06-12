@@ -1,6 +1,5 @@
 const Sequelize = im('sequelize');
 module.exports = async (options = Object) => {
-    console.log(options)
     let URL = await options.client.dataUTILS.creteURL();
     options.client.database = new Sequelize(URL, {
         define: {
