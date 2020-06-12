@@ -15,7 +15,7 @@ start = async() => {
     // Events handler
     im('./handlers/Events')(modmail);
     im('./utils/database')({
-        client:modmail
+        client: modmail
     });
     await modmail.login(modmail.credentials.base.token)
 };
