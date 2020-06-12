@@ -7,7 +7,7 @@ dataUTILS = require('./settings/credentials').db;
 
 modmail.credentials = require('./settings/credentials').credentials;
 modmail.configuration = require('./settings/config');
-modmail.logger = require('./utils/logger');
+modmail.logger = require('./utils/logger').log;
 modmail.dataUTILS = new dataUTILS();
 
 

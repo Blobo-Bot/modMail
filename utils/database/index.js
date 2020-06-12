@@ -11,7 +11,7 @@ module.exports = async (modmail) => {
     });
 
     await modmail.database.authenticate().then(() => {
-
+        modmail.logger('database conected !', 'log')
     }).catch(O_o => {
         throw O_o;
     });
