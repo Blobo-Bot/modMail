@@ -11,6 +11,7 @@ module.exports = async (modmail) => {
     });
 
     await modmail.database.authenticate().then(() => {
+        im('./utils/database/models')(modmail, Sequelize, modmail.database);
         modmail.logger('database conected !', 'log')
     }).catch(O_o => {
         throw O_o;

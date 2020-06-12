@@ -1,6 +1,7 @@
 const credentials = {
     base: {
-        token: ''
+        token: '',
+        prefix: ':'
     },
     database: {
         host: '',
