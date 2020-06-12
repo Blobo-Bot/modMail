@@ -1,34 +1,34 @@
-module.exports = (modmail, Sequelize, database) => {
+module.exports = (options) => {
     /** MODELS */
     try  {
-        database.define('tickets', {
+        options.client.database.define('tickets', {
             id: {
-                type: Sequelize.INTEGER,
+                type: options.Sequelize.INTEGER,
                 primaryKey: true,
                 autoIncrement: true
             },
             authorID:  {
-                type: Sequelize.STRING,
+                type: options.Sequelize.STRING,
                 allowNull: false
             },
             firstMessage: {
-                type: Sequelize.STRING,
+                type: options.Sequelize.STRING,
                 allowNull: false
             },
             opened: {
-                type: Sequelize.INTEGER,
+                type: options.Sequelize.INTEGER,
                 allowNull: false,
                 defaultValue: 1
             },
             channelID: {
-                type: Sequelize.INTEGER,
+                type: options.Sequelize.INTEGER,
                 allowNull: false
             }
         });
 
-        database.sync();
-        return database.models;
+        options.client.database.sync();
+        return options.client.models;
     } catch (e) {
-     modmail.logger(e, 'error')
+        options.client.logger(e, 'error')
     }
 };

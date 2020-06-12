@@ -1,7 +1,7 @@
 const Sequelize = im('sequelize');
-module.exports = async (modmail) => {
-    let URL = await modmail.dataUTILS.creteURL();
-    modmail.database = new Sequelize(URL, {
+module.exports = async (options) => {
+    let URL = await options.client.dataUTILS.creteURL();
+    options.client.database = new Sequelize(URL, {
         define: {
             charset: 'utf8',
             collate: 'utf8_general_ci',
@@ -10,9 +10,13 @@ module.exports = async (modmail) => {
         logging: false
     });
 
-    await modmail.database.authenticate().then(() => {
-        im('./utils/database/models')(modmail, Sequelize, modmail.database);
-        modmail.logger('database conected !', 'log')
+    await options.client.database.authenticate().then(() => {
+        im('./utils/database/models')({
+            client:options.client,
+            Sequelize: Sequelize,
+            database: options.client.database
+        });
+        options.client.logger('database conected !', 'log')
     }).catch(O_o => {
         throw O_o;
     });

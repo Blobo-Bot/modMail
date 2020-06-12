@@ -14,7 +14,9 @@ modmail.dataUTILS = new dataUTILS();
 start = async() => {
     // Events handler
     im('./handlers/Events')(modmail);
-    im('./utils/database')(modmail);
+    im('./utils/database')({
+        client:modmail
+    });
     await modmail.login(modmail.credentials.base.token)
 };
 (async () => {
