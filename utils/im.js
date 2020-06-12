@@ -12,12 +12,14 @@ im = (...module) => {
     }
     return require(module[0]);
 };
+
 /**
- * @type {Collection<K, Holds> | Collection<Snowflake, Role> | Collection<Snowflake, Message> | boolean | RequestCache}
+ * @type {NodeJS.Dict<NodeModule>}
  */
 im.cache = require.cache;
+
 /**
- * @type {}
+ * @type {NodeJS.Module}
  */
 im.main = require.main;
 /**

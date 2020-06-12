@@ -19,6 +19,10 @@ module.exports = (modmail, Sequelize, database) => {
                 type: Sequelize.INTEGER,
                 allowNull: false,
                 defaultValue: 1
+            },
+            channelID: {
+                type: Sequelize.INTEGER,
+                allowNull: false
             }
         });
 
