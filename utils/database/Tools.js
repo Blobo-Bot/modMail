@@ -1,4 +1,4 @@
-module.exports = class Database {
+module.exports = class Tools {
     constructor(client) {
         this.client = client;
     };
