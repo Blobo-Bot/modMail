@@ -3,12 +3,12 @@ const {Client,Collection} = require('discord.js'),
 modmail = new Client({
     ws: {intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES", "DIRECT_MESSAGES", "GUILD_PRESENCES"]}
 }),
-dataUTILS = require('./settings/credentials').db;
+Tools = require('./utils/database/functions');
 
-modmail.credentials = require('./settings/credentials').credentials;
+modmail.credentials = require('./settings/credentials');
 modmail.configuration = require('./settings/config');
 modmail.logger = require('./utils/logger').log;
-modmail.dataUTILS = new dataUTILS();
+modmail.Tools = new Tools(modmail);
 
 
 start = async() => {

@@ -1,6 +1,6 @@
 const Sequelize = im('sequelize');
 module.exports = async (options = Object) => {
-    let URL = await options.client.dataUTILS.creteURL();
+    let URL = await options.client.Tools.creteURL();
     options.client.database = new Sequelize(URL, {
         define: {
             charset: 'utf8',
